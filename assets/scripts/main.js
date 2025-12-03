@@ -128,17 +128,20 @@ class Game {
     this.timer = 0;
   }
   render(deltaTime) {
-    if (!this.gameOver) this.timer += deltaTime;
-    this.handlePeriodicEvents(deltaTime);
+   this.handlePeriodicEvents(deltaTime);
     this.background.update();
     this.background.draw();
+
     this.drawStatusText();
-    this.player.update();
-    this.player.draw();
     this.obstacles.forEach((obstacle) => {
       obstacle.update();
       obstacle.draw();
     });
+    if (!this.gameOver) {
+      this.player.update();
+      this.player.draw();
+      this.timer += deltaTime;
+    }
   }
   createObstacles() {
     this.obstacles = [];
@@ -230,3 +233,4 @@ window.addEventListener("load", function () {
   }
   requestAnimationFrame(animate);
 });
+
