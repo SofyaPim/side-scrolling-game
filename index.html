@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>basic adaptive game</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <canvas id="canvas1"></canvas>
+   <div class="assets">
+      <img src="assets/images/background_single.png" alt="background_single" id="background_single" >
+      <img src="assets/images/background_single2.png" alt="background_single2" id="background_single2" >
+      <img src="assets/images/player_fish.png" alt="player_fish" id="player_fish" >
+      <img src="assets/images/smallGears.png" alt="smallGears" id="smallGears" >
+      <audio src="assets/sounds/charge.mp3" alt="charge" id="charge" ></audio>
+      <audio src="assets/sounds/flap1.mp3" alt="flap1" id="flap1" ></audio>
+      <audio src="assets/sounds/flap2.mp3" alt="flap2" id="flap2" ></audio>
+      <audio src="assets/sounds/flap3.mp3" alt="flap3" id="flap3" ></audio>
+      <audio src="assets/sounds/flap4.mp3" alt="flap4" id="flap4" ></audio>
+      <audio src="assets/sounds/flap5.mp3" alt="flap5" id="flap5" ></audio>
+      <audio src="assets/sounds/win.mp3" alt="win" id="win" ></audio>
+      <audio src="assets/sounds/lose.mp3" alt="lose" id="lose" ></audio>
+    
+   </div>
+  <div class="controls">
+      <button id="fullScreenBtn">F</button>
+      <button id="resetBtn">R</button>
+      <button id="debugBtn">D</button>
+   </div>
+
+   <script src="assets/scripts/audio.js"></script>
+   <script src="assets/scripts/background.js"></script>
+   <script src="assets/scripts/player.js"></script>
+   <script src="assets/scripts/obstacle.js"></script>
+   <script src="assets/scripts/main.js"></script>
+</body>
+</html>
